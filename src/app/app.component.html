@@ -1,0 +1,12 @@
+<header>
+  <h1>Bingo!</h1>
+  <div class="__call_numbers" *ngIf="game.selectedNumbers.length" >
+    Numbers: {{game.selectedNumbers.toString()}}
+  </div>
+  <button (click)="game.nextNumber()" *ngIf="game.isPlaying">Next Number</button>
+</header>
+
+<div class="__main">
+  <app-board *ngFor="let board of boards" [board]="board" [ngClass]="{'winner': board.win}"></app-board>
+</div>
+

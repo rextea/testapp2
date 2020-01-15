@@ -1,0 +1,24 @@
+:host {
+  width: 45%;
+
+  border: 1px solid #000;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  span {
+    border: 1px solid;
+    text-align: center;
+    line-height: 3;
+
+    &.active {
+      background: #d2d2d2;
+    }
+  }
+  
+  &.winner {
+    border: 10px solid red;
+  }
+}
+

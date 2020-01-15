@@ -1,0 +1,1 @@
+<span [ngStyle]="{ 'width': 100/game.numRows + '%', 'height': 100/game.numCols + '%' }" [ngClass]="{'active': game?.isSelected(number)}" *ngFor="let number of numbers" >{{number}}</span>
