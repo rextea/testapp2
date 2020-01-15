@@ -106,11 +106,7 @@ export class GameService {
   }
 
   isSelected(num) {
-    if (this.selectedNumbers.indexOf(num) !== -1) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.selectedNumbers.indexOf(num) !== -1;
   }
 }
 
